@@ -39,22 +39,22 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.mshdabiola.data.model.Result
-import com.mshdabiola.designsystem.component.SkLoadingWheel
+import com.mshdabiola.designsystem.component.SchoolxLoadingWheel
 import com.mshdabiola.designsystem.component.scrollbar.DraggableScrollbar
 import com.mshdabiola.designsystem.component.scrollbar.rememberDraggableScroller
 import com.mshdabiola.designsystem.component.scrollbar.scrollbarState
 import com.mshdabiola.designsystem.theme.LocalTintTheme
 import com.mshdabiola.model.Note
 import com.mshdabiola.ui.noteItems
+import org.jetbrains.compose.resources.painterResource
+import org.jetbrains.compose.resources.stringResource
+import org.koin.compose.viewmodel.koinViewModel
+import org.koin.core.annotation.KoinExperimentalAPI
 import schoolx.features.main.generated.resources.Res
 import schoolx.features.main.generated.resources.features_main_empty_description
 import schoolx.features.main.generated.resources.features_main_empty_error
 import schoolx.features.main.generated.resources.features_main_img_empty_bookmarks
 import schoolx.features.main.generated.resources.features_main_loading
-import org.jetbrains.compose.resources.painterResource
-import org.jetbrains.compose.resources.stringResource
-import org.koin.compose.viewmodel.koinViewModel
-import org.koin.core.annotation.KoinExperimentalAPI
 
 // import org.koin.androidx.compose.koinViewModel
 
@@ -166,7 +166,7 @@ private fun LoadingState(modifier: Modifier = Modifier) {
         modifier = modifier.fillMaxSize().testTag("main:loading"),
         contentAlignment = Alignment.Center,
     ) {
-        SkLoadingWheel(
+        SchoolxLoadingWheel(
             contentDesc = stringResource(Res.string.features_main_loading),
         )
     }

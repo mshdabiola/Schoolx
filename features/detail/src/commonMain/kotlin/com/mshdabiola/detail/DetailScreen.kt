@@ -21,9 +21,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.text.input.ImeAction
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import com.mshdabiola.designsystem.component.SkTextField
-import com.mshdabiola.designsystem.component.SkTopAppBar
-import com.mshdabiola.designsystem.icon.SkIcons
+import com.mshdabiola.designsystem.component.SchoolxTextField
+import com.mshdabiola.designsystem.component.SchoolxTopAppBar
+import com.mshdabiola.designsystem.icon.SchoolxIcons
 import com.mshdabiola.ui.TrackScreenViewEvent
 import com.mshdabiola.ui.Waiting
 import kotlinx.coroutines.launch
@@ -113,16 +113,16 @@ internal fun MainContent(
                 animatedVisibilityScope = animatedContentScope,
             ),
         ) {
-            SkTopAppBar(
+            SchoolxTopAppBar(
                 titleRes = "Note",
-                navigationIcon = SkIcons.ArrowBack,
+                navigationIcon = SchoolxIcons.ArrowBack,
                 navigationIconContentDescription = "",
-                actionIcon = SkIcons.Delete,
+                actionIcon = SchoolxIcons.Delete,
                 actionIconContentDescription = "delete",
                 onActionClick = { onDelete() },
                 onNavigationClick = { onBack() },
             )
-            SkTextField(
+            SchoolxTextField(
                 modifier = Modifier
                     .fillMaxWidth()
                     .testTag("detail:title"),
@@ -131,7 +131,7 @@ internal fun MainContent(
                 maxNum = TextFieldLineLimits.SingleLine,
                 imeAction = ImeAction.Next,
             )
-            SkTextField(
+            SchoolxTextField(
                 modifier = Modifier
                     .fillMaxWidth()
                     .testTag("detail:content")
