@@ -21,7 +21,7 @@ import co.touchlab.kermit.platformLogWriter
 import com.mshdabiola.designsystem.drawable.defaultAppIcon
 import com.mshdabiola.designsystem.string.appName
 import com.mshdabiola.schoolx.di.appModule
-import com.mshdabiola.schoolx.ui.schoolx
+import com.mshdabiola.schoolx.ui.SchoolxApp
 import com.mshdabiola.ui.SplashScreen
 import kotlinx.coroutines.delay
 import org.koin.core.context.GlobalContext.startKoin
@@ -49,7 +49,7 @@ fun mainApp() {
                 show.value = false
             }
             Box(Modifier.fillMaxSize()) {
-                schoolx()
+                SchoolxApp()
                 if (show.value) {
                     SplashScreen()
                 }

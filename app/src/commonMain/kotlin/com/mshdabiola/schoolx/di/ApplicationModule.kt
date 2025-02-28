@@ -3,8 +3,8 @@ package com.mshdabiola.schoolx.di
 import com.mshdabiola.data.di.dataModule
 import com.mshdabiola.detail.detailModule
 import com.mshdabiola.main.mainModule
-import com.mshdabiola.setting.settingModule
 import com.mshdabiola.schoolx.MainAppViewModel
+import com.mshdabiola.setting.settingModule
 import org.koin.core.module.dsl.viewModel
 import org.koin.dsl.module
 

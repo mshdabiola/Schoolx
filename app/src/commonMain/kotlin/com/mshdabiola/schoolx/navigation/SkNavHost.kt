@@ -14,13 +14,13 @@ import com.mshdabiola.detail.navigation.detailScreen
 import com.mshdabiola.detail.navigation.navigateToDetail
 import com.mshdabiola.main.navigation.Main
 import com.mshdabiola.main.navigation.mainScreen
+import com.mshdabiola.schoolx.ui.SchoolxAppState
 import com.mshdabiola.setting.navigation.settingScreen
-import com.mshdabiola.schoolx.ui.SkAppState
 
 @OptIn(ExperimentalSharedTransitionApi::class)
 @Composable
 fun SkNavHost(
-    appState: SkAppState,
+    appState: SchoolxAppState,
     onShowSnackbar: suspend (String, String?) -> Boolean = { _, _ -> false },
     modifier: Modifier = Modifier,
 ) {

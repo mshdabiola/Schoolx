@@ -43,21 +43,21 @@ import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.mshdabiola.analytics.AnalyticsHelper
 import com.mshdabiola.analytics.LocalAnalyticsHelper
-import com.mshdabiola.designsystem.component.SkBackground
-import com.mshdabiola.designsystem.component.SkGradientBackground
-import com.mshdabiola.designsystem.component.SkTopAppBar
-import com.mshdabiola.designsystem.icon.SkIcons
+import com.mshdabiola.designsystem.component.SchoolxBackground
+import com.mshdabiola.designsystem.component.SchoolxGradientBackground
+import com.mshdabiola.designsystem.component.SchoolxTopAppBar
+import com.mshdabiola.designsystem.icon.SchoolxIcons
 import com.mshdabiola.designsystem.theme.GradientColors
 import com.mshdabiola.designsystem.theme.LocalGradientColors
-import com.mshdabiola.designsystem.theme.SkTheme
+import com.mshdabiola.designsystem.theme.SchoolxTheme
 import com.mshdabiola.detail.navigation.Detail
 import com.mshdabiola.detail.navigation.navigateToDetail
 import com.mshdabiola.model.DarkThemeConfig
 import com.mshdabiola.model.ThemeBrand
-import com.mshdabiola.setting.navigation.navigateToSetting
 import com.mshdabiola.schoolx.MainActivityUiState
 import com.mshdabiola.schoolx.MainAppViewModel
 import com.mshdabiola.schoolx.navigation.SkNavHost
+import com.mshdabiola.setting.navigation.navigateToSetting
 import com.mshdabiola.ui.semanticsCommon
 import org.koin.compose.koinInject
 import org.koin.compose.viewmodel.koinViewModel
@@ -68,10 +68,10 @@ import org.koin.core.annotation.KoinExperimentalAPI
     ExperimentalMaterial3Api::class,
 )
 @Composable
-fun schoolx() {
+fun SchoolxApp() {
     val windowAdaptiveInfo = currentWindowAdaptiveInfo()
 
-    val appState = rememberSkAppState(
+    val appState = rememberSchoolxAppState(
         windowSizeClass = windowAdaptiveInfo.windowSizeClass,
     )
     val shouldShowGradientBackground = false
@@ -82,13 +82,13 @@ fun schoolx() {
     val darkTheme = shouldUseDarkTheme(uiState)
 
     CompositionLocalProvider(LocalAnalyticsHelper provides analyticsHelper) {
-        SkTheme(
+        SchoolxTheme(
             androidTheme = shouldUseAndroidTheme(uiState),
             darkTheme = darkTheme,
             disableDynamicTheming = shouldDisableDynamicTheming(uiState),
         ) {
-            SkBackground {
-                SkGradientBackground(
+            SchoolxBackground {
+                SchoolxGradientBackground(
                     gradientColors = if (shouldShowGradientBackground) {
                         LocalGradientColors.current
                     } else {
@@ -123,11 +123,11 @@ fun schoolx() {
                                 topBar = {
                                     if (appState.shouldShowTopBar) {
                                         if (appState.isMain) {
-                                            SkTopAppBar(
+                                            SchoolxTopAppBar(
                                                 titleRes = "Note",
-                                                navigationIcon = SkIcons.Person,
+                                                navigationIcon = SchoolxIcons.Person,
                                                 navigationIconContentDescription = "",
-                                                actionIcon = SkIcons.Settings,
+                                                actionIcon = SchoolxIcons.Settings,
                                                 actionIconContentDescription = "se",
                                                 onActionClick = { appState.navController.navigateToSetting() },
                                             )
@@ -150,7 +150,7 @@ fun schoolx() {
                                             text = { Text("Add Note") },
                                             icon = {
                                                 Icon(
-                                                    SkIcons.Add,
+                                                    SchoolxIcons.Add,
                                                     contentDescription = "add",
                                                 )
                                             },

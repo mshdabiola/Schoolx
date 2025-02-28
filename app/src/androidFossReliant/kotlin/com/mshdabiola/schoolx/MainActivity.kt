@@ -14,7 +14,7 @@ import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
-import com.mshdabiola.schoolx.ui.schoolx
+import com.mshdabiola.schoolx.ui.SchoolxApp
 import com.mshdabiola.schoolx.ui.shouldUseDarkTheme
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.flow.onEach
@@ -67,7 +67,7 @@ class MainActivity : ComponentActivity() {
                 onDispose {}
             }
 
-            schoolx()
+            SchoolxApp()
         }
     }
 }
