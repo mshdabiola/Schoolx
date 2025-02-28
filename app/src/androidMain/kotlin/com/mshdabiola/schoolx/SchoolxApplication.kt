@@ -2,19 +2,19 @@
  *abiola 2024
  */
 
-package com.mshdabiola.skeletonapp
+package com.mshdabiola.schoolx
 
 import android.app.Application
 import co.touchlab.kermit.Logger
 import co.touchlab.kermit.koin.KermitKoinLogger
 import co.touchlab.kermit.loggerConfigInit
 import co.touchlab.kermit.platformLogWriter
-import com.mshdabiola.skeletonapp.di.appModule
+import com.mshdabiola.schoolx.di.appModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
 import org.koin.dsl.module
 
-class SkeletonApplication : Application() {
+class SchoolxApplication : Application() {
 
     override fun onCreate() {
         super.onCreate()
@@ -33,7 +33,7 @@ class SkeletonApplication : Application() {
             logger(
                 KermitKoinLogger(Logger.withTag("koin")),
             )
-            androidContext(this@SkeletonApplication)
+            androidContext(this@SchoolxApplication)
             modules(appModule, logModule)
         }
 

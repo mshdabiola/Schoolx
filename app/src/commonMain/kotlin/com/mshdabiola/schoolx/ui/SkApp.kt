@@ -2,7 +2,7 @@
  *abiola 2022
  */
 
-package com.mshdabiola.skeletonapp.ui
+package com.mshdabiola.schoolx.ui
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.Column
@@ -55,9 +55,9 @@ import com.mshdabiola.detail.navigation.navigateToDetail
 import com.mshdabiola.model.DarkThemeConfig
 import com.mshdabiola.model.ThemeBrand
 import com.mshdabiola.setting.navigation.navigateToSetting
-import com.mshdabiola.skeletonapp.MainActivityUiState
-import com.mshdabiola.skeletonapp.MainAppViewModel
-import com.mshdabiola.skeletonapp.navigation.SkNavHost
+import com.mshdabiola.schoolx.MainActivityUiState
+import com.mshdabiola.schoolx.MainAppViewModel
+import com.mshdabiola.schoolx.navigation.SkNavHost
 import com.mshdabiola.ui.semanticsCommon
 import org.koin.compose.koinInject
 import org.koin.compose.viewmodel.koinViewModel
@@ -68,7 +68,7 @@ import org.koin.core.annotation.KoinExperimentalAPI
     ExperimentalMaterial3Api::class,
 )
 @Composable
-fun SkeletonApp() {
+fun schoolx() {
     val windowAdaptiveInfo = currentWindowAdaptiveInfo()
 
     val appState = rememberSkAppState(

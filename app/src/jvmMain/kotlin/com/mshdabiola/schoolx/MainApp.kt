@@ -1,4 +1,4 @@
-package com.mshdabiola.skeletonapp
+package com.mshdabiola.schoolx
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
@@ -20,8 +20,8 @@ import co.touchlab.kermit.loggerConfigInit
 import co.touchlab.kermit.platformLogWriter
 import com.mshdabiola.designsystem.drawable.defaultAppIcon
 import com.mshdabiola.designsystem.string.appName
-import com.mshdabiola.skeletonapp.di.appModule
-import com.mshdabiola.skeletonapp.ui.SkeletonApp
+import com.mshdabiola.schoolx.di.appModule
+import com.mshdabiola.schoolx.ui.schoolx
 import com.mshdabiola.ui.SplashScreen
 import kotlinx.coroutines.delay
 import org.koin.core.context.GlobalContext.startKoin
@@ -49,7 +49,7 @@ fun mainApp() {
                 show.value = false
             }
             Box(Modifier.fillMaxSize()) {
-                SkeletonApp()
+                schoolx()
                 if (show.value) {
                     SplashScreen()
                 }
@@ -59,7 +59,7 @@ fun mainApp() {
 }
 
 fun main() {
-    val path = File("${System.getProperty("user.home")}/AppData/Local/hydraulic")
+    val path = File("${System.getProperty("user.home")}/AppData/Local/schoolx")
     if (path.exists().not()) {
         path.mkdirs()
     }

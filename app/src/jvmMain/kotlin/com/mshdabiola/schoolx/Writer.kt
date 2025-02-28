@@ -1,4 +1,4 @@
-package com.mshdabiola.skeletonapp
+package com.mshdabiola.schoolx
 
 import co.touchlab.kermit.DefaultFormatter
 import co.touchlab.kermit.LogWriter
