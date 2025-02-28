@@ -14,7 +14,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
-import com.mshdabiola.designsystem.icon.SkIcons
+import com.mshdabiola.designsystem.icon.SchoolxIcons
 
 /**
  * Now in Android filter chip with included leading checked icon as well as text content slot.
@@ -27,7 +27,7 @@ import com.mshdabiola.designsystem.icon.SkIcons
  * @param label The text label content.
  */
 @Composable
-fun SkFilterChip(
+fun SchoolxFilterChip(
     selected: Boolean,
     onSelectedChange: (Boolean) -> Unit,
     modifier: Modifier = Modifier,
@@ -47,7 +47,7 @@ fun SkFilterChip(
         leadingIcon = if (selected) {
             {
                 Icon(
-                    imageVector = SkIcons.Check,
+                    imageVector = SchoolxIcons.Check,
                     contentDescription = null,
                 )
             }
@@ -61,28 +61,28 @@ fun SkFilterChip(
             borderColor = MaterialTheme.colorScheme.onBackground,
             selectedBorderColor = MaterialTheme.colorScheme.onBackground,
             disabledBorderColor = MaterialTheme.colorScheme.onBackground.copy(
-                alpha = SkChipDefaults.DISABLED_CHIP_CONTENT_ALPHA,
+                alpha = SchoolxChipDefaults.DISABLED_CHIP_CONTENT_ALPHA,
             ),
             disabledSelectedBorderColor = MaterialTheme.colorScheme.onBackground.copy(
-                alpha = SkChipDefaults.DISABLED_CHIP_CONTENT_ALPHA,
+                alpha = SchoolxChipDefaults.DISABLED_CHIP_CONTENT_ALPHA,
             ),
-            selectedBorderWidth = SkChipDefaults.ChipBorderWidth,
+            selectedBorderWidth = SchoolxChipDefaults.ChipBorderWidth,
         ),
         colors = FilterChipDefaults.filterChipColors(
             labelColor = MaterialTheme.colorScheme.onBackground,
             iconColor = MaterialTheme.colorScheme.onBackground,
             disabledContainerColor = if (selected) {
                 MaterialTheme.colorScheme.onBackground.copy(
-                    alpha = SkChipDefaults.DISABLED_CHIP_CONTAINER_ALPHA,
+                    alpha = SchoolxChipDefaults.DISABLED_CHIP_CONTAINER_ALPHA,
                 )
             } else {
                 Color.Transparent
             },
             disabledLabelColor = MaterialTheme.colorScheme.onBackground.copy(
-                alpha = SkChipDefaults.DISABLED_CHIP_CONTENT_ALPHA,
+                alpha = SchoolxChipDefaults.DISABLED_CHIP_CONTENT_ALPHA,
             ),
             disabledLeadingIconColor = MaterialTheme.colorScheme.onBackground.copy(
-                alpha = SkChipDefaults.DISABLED_CHIP_CONTENT_ALPHA,
+                alpha = SchoolxChipDefaults.DISABLED_CHIP_CONTENT_ALPHA,
             ),
             selectedContainerColor = MaterialTheme.colorScheme.primaryContainer,
             selectedLabelColor = MaterialTheme.colorScheme.onBackground,
@@ -91,7 +91,7 @@ fun SkFilterChip(
     )
 }
 
-object SkChipDefaults {
+object SchoolxChipDefaults {
     // TODO: File bug
     // FilterChip default values aren't exposed via FilterChipDefaults
     const val DISABLED_CHIP_CONTAINER_ALPHA = 0.12f

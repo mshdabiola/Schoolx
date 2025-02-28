@@ -14,7 +14,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 
 @Composable
-fun SkTopicTag(
+fun SchoolxTopicTag(
     modifier: Modifier = Modifier,
     followed: Boolean,
     onClick: () -> Unit,
@@ -26,7 +26,7 @@ fun SkTopicTag(
             MaterialTheme.colorScheme.primaryContainer
         } else {
             MaterialTheme.colorScheme.surfaceVariant.copy(
-                alpha = SkTagDefaults.UNFOLLOWED_TOPIC_TAG_CONTAINER_ALPHA,
+                alpha = SchoolxTagDefaults.UNFOLLOWED_TOPIC_TAG_CONTAINER_ALPHA,
             )
         }
         TextButton(
@@ -36,7 +36,7 @@ fun SkTopicTag(
                 containerColor = containerColor,
                 contentColor = contentColorFor(backgroundColor = containerColor),
                 disabledContainerColor = MaterialTheme.colorScheme.onSurface.copy(
-                    alpha = SkTagDefaults.DISABLED_TOPIC_TAG_CONTAINER_ALPHA,
+                    alpha = SchoolxTagDefaults.DISABLED_TOPIC_TAG_CONTAINER_ALPHA,
                 ),
             ),
         ) {
@@ -50,7 +50,7 @@ fun SkTopicTag(
 /**
  * Now in Android tag default values.
  */
-object SkTagDefaults {
+object SchoolxTagDefaults {
     const val UNFOLLOWED_TOPIC_TAG_CONTAINER_ALPHA = 0.5f
 
     // TODO: File bug

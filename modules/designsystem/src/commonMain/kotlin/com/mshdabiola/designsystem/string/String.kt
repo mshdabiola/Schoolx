@@ -1,6 +1,9 @@
 package com.mshdabiola.designsystem.string
 
 import androidx.compose.runtime.Composable
+import org.jetbrains.compose.resources.ExperimentalResourceApi
+import org.jetbrains.compose.resources.stringArrayResource
+import org.jetbrains.compose.resources.stringResource
 import schoolx.modules.designsystem.generated.resources.Res
 import schoolx.modules.designsystem.generated.resources.app_name
 import schoolx.modules.designsystem.generated.resources.main_navigator
@@ -10,9 +13,6 @@ import schoolx.modules.designsystem.generated.resources.modules_ui_cbt_subject
 import schoolx.modules.designsystem.generated.resources.modules_ui_cbt_type
 import schoolx.modules.designsystem.generated.resources.setting_navigator
 import schoolx.modules.designsystem.generated.resources.str_arr
-import org.jetbrains.compose.resources.ExperimentalResourceApi
-import org.jetbrains.compose.resources.stringArrayResource
-import org.jetbrains.compose.resources.stringResource
 
 val appName
     @Composable

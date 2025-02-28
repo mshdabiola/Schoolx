@@ -6,14 +6,14 @@ package com.mshdabiola.designsystem.components
 
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import com.mshdabiola.designsystem.component.SkTopicTag
-import com.mshdabiola.designsystem.theme.SkTheme
+import com.mshdabiola.designsystem.component.SchoolxTopicTag
+import com.mshdabiola.designsystem.theme.SchoolxTheme
 
 @ThemePreviews
 @Composable
 fun TagPreview() {
-    SkTheme {
-        SkTopicTag(followed = true, onClick = {}) {
+    SchoolxTheme {
+        SchoolxTopicTag(followed = true, onClick = {}) {
             Text("Topic".uppercase())
         }
     }

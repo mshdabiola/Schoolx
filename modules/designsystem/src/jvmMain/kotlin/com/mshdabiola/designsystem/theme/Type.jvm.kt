@@ -4,7 +4,7 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 
-internal actual val SkTypography: Typography
+internal actual val SchoolxTypography: Typography
     get() = Typography(
         displayLarge = TextStyle(
             fontWeight = FontWeight.Normal,

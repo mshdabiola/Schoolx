@@ -9,16 +9,16 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.mshdabiola.designsystem.component.SkBackground
-import com.mshdabiola.designsystem.component.SkFilterChip
-import com.mshdabiola.designsystem.theme.SkTheme
+import com.mshdabiola.designsystem.component.SchoolxBackground
+import com.mshdabiola.designsystem.component.SchoolxFilterChip
+import com.mshdabiola.designsystem.theme.SchoolxTheme
 
 @ThemePreviews
 @Composable
 fun ChipPreview() {
-    SkTheme {
-        SkBackground(modifier = Modifier.size(80.dp, 20.dp)) {
-            SkFilterChip(selected = true, onSelectedChange = {}) {
+    SchoolxTheme {
+        SchoolxBackground(modifier = Modifier.size(80.dp, 20.dp)) {
+            SchoolxFilterChip(selected = true, onSelectedChange = {}) {
                 Text("Chip")
             }
         }

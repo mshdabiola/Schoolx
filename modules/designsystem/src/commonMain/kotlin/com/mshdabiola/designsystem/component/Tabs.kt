@@ -29,7 +29,7 @@ import androidx.compose.ui.unit.dp
  * @param text The text label content.
  */
 @Composable
-fun SkTab(
+fun SchoolxTab(
     selected: Boolean,
     onClick: () -> Unit,
     modifier: Modifier = Modifier,
@@ -46,7 +46,7 @@ fun SkTab(
             ProvideTextStyle(
                 value = style,
                 content = {
-                    Box(modifier = Modifier.padding(top = SkTabDefaults.TabTopPadding)) {
+                    Box(modifier = Modifier.padding(top = SchoolxTabDefaults.TabTopPadding)) {
                         text()
                     }
                 },
@@ -60,11 +60,11 @@ fun SkTab(
  *
  * @param selectedTabIndex The index of the currently selected tab.
  * @param modifier Modifier to be applied to the tab row.
- * @param tabs The tabs inside this tab row. Typically this will be multiple [SkTab]s. Each element
+ * @param tabs The tabs inside this tab row. Typically this will be multiple [SchoolxTab]s. Each element
  * inside this lambda will be measured and placed evenly across the row, each taking up equal space.
  */
 @Composable
-fun SkTabRow(
+fun SchoolxTabRow(
     selectedTabIndex: Int,
     modifier: Modifier = Modifier,
     tabs: @Composable () -> Unit,
@@ -85,6 +85,6 @@ fun SkTabRow(
     )
 }
 
-object SkTabDefaults {
+object SchoolxTabDefaults {
     val TabTopPadding = 7.dp
 }

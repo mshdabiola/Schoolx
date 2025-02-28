@@ -2,13 +2,13 @@ package com.mshdabiola.ui
 
 import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
-import com.mshdabiola.designsystem.theme.SkTheme
+import com.mshdabiola.designsystem.theme.SchoolxTheme
 
 @DevicePreviews
 @ThemePreviews
 @Composable
 fun ProfileCardPreview() {
-    SkTheme {
+    SchoolxTheme {
         Surface {
             ProfileCard()
         }

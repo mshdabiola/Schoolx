@@ -47,7 +47,7 @@ import androidx.compose.ui.unit.dp
 
 @OptIn(ExperimentalFoundationApi::class)
 @Composable
-fun SkTextField(
+fun SchoolxTextField(
     modifier: Modifier = Modifier,
     state: TextFieldState,
     placeholder: String? = null,

@@ -24,7 +24,7 @@ import androidx.compose.ui.platform.testTag
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun SkTopAppBar(
+fun SchoolxTopAppBar(
     titleRes: String,
     navigationIcon: ImageVector,
     navigationIconContentDescription: String,

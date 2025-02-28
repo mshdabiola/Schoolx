@@ -7,18 +7,18 @@ package com.mshdabiola.designsystem.components
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.unit.dp
-import com.mshdabiola.designsystem.component.SkTab
-import com.mshdabiola.designsystem.component.SkTabRow
-import com.mshdabiola.designsystem.theme.SkTheme
+import com.mshdabiola.designsystem.component.SchoolxTab
+import com.mshdabiola.designsystem.component.SchoolxTabRow
+import com.mshdabiola.designsystem.theme.SchoolxTheme
 
 @ThemePreviews
 @Composable
 fun TabsPreview() {
-    SkTheme {
+    SchoolxTheme {
         val titles = listOf("Topics", "People")
-        SkTabRow(selectedTabIndex = 0) {
+        SchoolxTabRow(selectedTabIndex = 0) {
             titles.forEachIndexed { index, title ->
-                SkTab(
+                SchoolxTab(
                     selected = index == 0,
                     onClick = { },
                     text = { Text(text = title) },

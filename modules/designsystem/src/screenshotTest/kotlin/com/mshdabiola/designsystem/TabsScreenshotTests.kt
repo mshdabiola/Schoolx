@@ -8,8 +8,8 @@ import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
-import com.mshdabiola.designsystem.component.SkTab
-import com.mshdabiola.designsystem.component.SkTabRow
+import com.mshdabiola.designsystem.component.SchoolxTab
+import com.mshdabiola.designsystem.component.SchoolxTabRow
 import com.mshdabiola.testing.util.CaptureMultiTheme
 
 class TabsScreenshotTests {
@@ -35,9 +35,9 @@ class TabsScreenshotTests {
     private fun NiaTabsExample(label: String = "Topics") {
         Surface {
             val titles = listOf(label, "People")
-            SkTabRow(selectedTabIndex = 0) {
+            SchoolxTabRow(selectedTabIndex = 0) {
                 titles.forEachIndexed { index, title ->
-                    SkTab(
+                    SchoolxTab(
                         selected = index == 0,
                         onClick = { },
                         text = { Text(text = title) },

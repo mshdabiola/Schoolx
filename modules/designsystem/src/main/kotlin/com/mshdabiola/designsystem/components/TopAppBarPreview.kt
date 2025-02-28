@@ -10,18 +10,18 @@ import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
 import com.mshdabiola.designsystem.component.DetailTopAppBar
-import com.mshdabiola.designsystem.component.SkTopAppBar
-import com.mshdabiola.designsystem.icon.SkIcons
+import com.mshdabiola.designsystem.component.SchoolxTopAppBar
+import com.mshdabiola.designsystem.icon.SchoolxIcons
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Preview("Top App Bar")
 @Composable
 private fun SkTopAppBarPreview() {
-    SkTopAppBar(
+    SchoolxTopAppBar(
         titleRes = "",
-        navigationIcon = SkIcons.Search,
+        navigationIcon = SchoolxIcons.Search,
         navigationIconContentDescription = "Navigation icon",
-        actionIcon = SkIcons.MoreVert,
+        actionIcon = SchoolxIcons.MoreVert,
         actionIconContentDescription = "Action icon",
     )
 }
