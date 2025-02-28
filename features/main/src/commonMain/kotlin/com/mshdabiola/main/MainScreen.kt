@@ -46,11 +46,11 @@ import com.mshdabiola.designsystem.component.scrollbar.scrollbarState
 import com.mshdabiola.designsystem.theme.LocalTintTheme
 import com.mshdabiola.model.Note
 import com.mshdabiola.ui.noteItems
-import hydraulic.features.main.generated.resources.Res
-import hydraulic.features.main.generated.resources.features_main_empty_description
-import hydraulic.features.main.generated.resources.features_main_empty_error
-import hydraulic.features.main.generated.resources.features_main_img_empty_bookmarks
-import hydraulic.features.main.generated.resources.features_main_loading
+import schoolx.features.main.generated.resources.Res
+import schoolx.features.main.generated.resources.features_main_empty_description
+import schoolx.features.main.generated.resources.features_main_empty_error
+import schoolx.features.main.generated.resources.features_main_img_empty_bookmarks
+import schoolx.features.main.generated.resources.features_main_loading
 import org.jetbrains.compose.resources.painterResource
 import org.jetbrains.compose.resources.stringResource
 import org.koin.compose.viewmodel.koinViewModel
