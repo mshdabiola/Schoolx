@@ -30,7 +30,7 @@ plugins {
 }
 
 moduleGraphConfig {
-    heading = "###  Hydraulic Module Graph"
+    heading = "###  Schoolx Module Graph"
     readmePath = "${rootDir}/FULLGRAPH.md"
     showFullPath = false
     setStyleByModuleType.set(true)

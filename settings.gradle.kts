@@ -21,7 +21,7 @@ dependencyResolutionManagement {
         maven(url = "https://maven.pkg.jetbrains.space/kotlin/p/wasm/experimental")
     }
 }
-rootProject.name = "Hydraulic"
+rootProject.name = "Schoolx"
 include(":modules:database")
 include(":modules:designsystem")
 include(":modules:model")

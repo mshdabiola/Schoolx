@@ -1,4 +1,4 @@
-###  Hydraulic Module Graph
+###  Schoolx Module Graph
 
 ```mermaid
 %%{
